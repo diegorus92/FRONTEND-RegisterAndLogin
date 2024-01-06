@@ -1,0 +1,9 @@
+<p>users works!</p>
+<button type="button" class="btn btn-primary" (click)="getUsers()">View Users</button>
+<div class="container-sm" *ngIf="users">
+    <p *ngFor="let user of users">
+        {{user.nickName}} || {{user.email}} || {{user.rol}}
+    </p>
+    
+</div>
+
